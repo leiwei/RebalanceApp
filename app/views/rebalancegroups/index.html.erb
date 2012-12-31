@@ -1,0 +1,59 @@
+
+<script>
+    var W = null; // The window with documentation
+
+    if(window.Starting==null) {
+        try {
+            GetElem('title').innerHTML = "TreeGrid HTML tutorial and example list";
+            GetElem('desc').style.display = "none";
+        } catch(e) { }
+    }
+    Grids.OnCanRowAdd  =  function(G,row){
+
+        OverlayShow();
+    }
+
+    Grids. OnReload =function(a,b,c)
+    {
+        debugger;
+
+    }
+
+    Grids.OnRowDelete= function(grid, row, type)
+    {
+        var sid = row.id;
+        $.ajax({
+            type: "delete",
+            url: "/rebalancegroups/" + sid,
+            data: "",
+            success: function(msg){
+                debugger;
+                alert( "Data Saved: " + msg );
+            }
+        });
+
+    }
+
+    function OverlayShow(){
+
+    }
+   /* $.ajax({
+        type: "post",
+        url: "http://127.0.0.1:3000/rebalancegroups/returnxml",
+        data: "",
+        success: function(msg){
+            debugger;
+            alert( "Data Saved: " + msg );
+        }
+    });
+*/
+</script>
+<!--
+
+<% @rebalancegroup.each do |r| %>
+      <div class="ui-corner-bl"><%= r.group_name %></div>
+<% end %>-->
+<div id="content" style="float:left;"><div style="height: 100%; width: 670px;"><bdo Data_Url="/rebalancegroups/returnxml" Layout_Url="/TreeGrid/IndexDef.xml" onload="OverlayShow()" ></bdo></div></div>
+
+
+

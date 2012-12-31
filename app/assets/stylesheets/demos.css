@@ -1,0 +1,100 @@
+body {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+}
+
+table {
+	font-size: 1em;
+}
+
+.demo-description {
+	clear: both;
+	padding: 12px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+
+body { font-family:Verdana; font-size:14px; margin:0; line-height:150%;}
+
+#container {margin:0 auto; width:900px;}
+#header { height:100px; background:#6cf; margin-bottom:5px;}
+#menu { height:30px; background:#09c; margin-bottom:5px;}
+#mainContent { background:url(bg.gif) 0 0 repeat-y; overflow:auto;zoom:1; margin-bottom:5px;}
+#sidebar { float:left; width:200px; background:#9ff;margin-right: 5px;}
+#content { float:right; width:675px; padding:10px; background:#cff;height: 400px;overflow:auto}
+#footer { height:60px; background:#6cf;}
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+
+
+/* -----------------------CSS Document tree -------------------------------------------*/
+
+
+#recommenderWidget li,#historyWidget li{height:1.6em;overflow:hidden}
+.widget .current{overflow:visible}
+
+
+
+
+a { color:#003366; }
+a:hover { color:#060; text-decoration:underline; }
+a:active { color:#C30;  }
+.jsonTree { height: 400px; font: 12px/1.75 'Microsoft Yahei', Tahoma, Arial, Helvetica, STHeiti; _font-family:Tahoma,Arial,Helvetica,STHeiti; -o-font-family: Tahoma, Arial; }
+.jsonTree a { text-decoration:none; }
+.jsonTree dl { padding:0; margin:0; }
+.jsonTree dt { cursor:pointer; padding:0 3px; height:2em; line-height:2em; border-radius:5px; }
+.jsonTree dd { margin:0; }
+.jsonTree dl dd { padding-left:0.5em; border-left:1px dotted #EEE; margin-left:6px; }
+.jsonTree dl dd a { display:block; padding:3px; border-radius:5px; }
+.jsonTree dt:hover, .jsonTree dl dd a:hover { background:#D5E2FF; }
+.jsonTree-icon { margin-right:3px; display:inline-block; *display:inline; *zoom:1; width:9px; height:9px; vertical-align:middle; }
+.jsonTree-show dd { display:block; }
+.jsonTree-hide dd { display:none; }
+.jsonTree-show > dt { font-weight:bold; color:#060; }
+.jsonTree-show .jsonTree-icon { background:url(http://bbs.blueidea.com/attachment.php?aid=165232&k=d8f4eb539f2cbdb908f3d3677636265a&t=1307192054¬humb=yes) no-repeat -9px 0; }
+.jsonTree-hide .jsonTree-icon { background:url(http://bbs.blueidea.com/attachment.php?aid=165232&k=d8f4eb539f2cbdb908f3d3677636265a&t=1307192054¬humb=yes) no-repeat 0 0; }
+.jsonTree-number { display:inline-block; *display:inline; *zoom:1; min-width:1.5em; _width:1.5em; text-align:right; color:#CCC; }
+.jsonTree a:hover .jsonTree-name { text-decoration:underline; }
+.jsonTree a:hover .jsonTree-number { color:#666; }
+
+
+/*Div dialog css*/
+
+#overlay {
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 100%;
+    text-align:center;
+    z-index: 200;
+
+}
+
+#overlay div {
+    width:300px;
+    height:400px;
+    margin: 100px auto;
+    background-color: #fff;
+    border:1px solid #000;
+    padding:15px;
+    text-align:center;
+    FILTER:alpha(opacity=20)
+}
+
+
+body { font-size: 62.5%; }
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+div#users-contain { width: 350px; margin: 20px 0; }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }

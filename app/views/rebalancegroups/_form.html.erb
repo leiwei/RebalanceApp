@@ -1,0 +1,98 @@
+<%= form_for(@rebalancegroup) do |f| %>
+    <% if @rebalancegroup.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@rebalancegroup.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+          <ul>
+            <% @rebalancegroup.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <table width="550px" border="0" cellspacing="0" style="text-align: left;">
+      <tr>
+        <td >Group Name:</td>
+        <td><%= f.text_field :group_name %></td>
+      </tr>
+      <tr>
+        <td>Description:</td>
+        <td> <%= f.text_field :note %></td>
+      </tr>
+      <tr>
+        <td>Primary Benchmark:</td>
+        <td> <%= f.text_field :benchmk_pri %></td>
+      </tr>
+      <tr>
+        <td>Secondary Benchmark:</td>
+        <td> <%= f.text_field :benchmk_secd %></td>
+
+      </tr>
+      <tr>
+        <td>Tertiary Benchmark:</td>
+        <td> <%= f.text_field :benchmk_terti %></td>
+      </tr>
+      <tr>
+        <td>Target Asset Allocation:</td>
+        <td> <%= f.text_field :taraset_id %></td>
+      </tr>
+      <tr>
+        <td>Target Asset Allocation:</td>
+        <td> <%= f.text_field :taraset_id %></td>
+      </tr>
+      <tr>
+        <td>Target Asset Allocation:</td>
+        <td> <%= f.text_field :taraset_id %></td>
+      </tr>
+      <tr>
+        <td>Model Portfolio:</td>
+        <td> <%= f.text_field :taraset_id %></td>
+      </tr>
+      <tr>
+        <td>Cash Need:</td>
+        <td> <%= f.text_field :taraset_id %></td>
+      </tr>
+      <tr>
+        <td> Cash Need Date:</td>
+        <td> <%= f.text_field :taraset_id %></td>
+      </tr>
+      <tr>
+        <td> Next Review Date:</td>
+        <td> <%= f.text_field :taraset_id %></td>
+      </tr>
+      <tr>
+        <td> Short-Term Gain Rate:</td>
+        <td> <%= f.text_field :short_gainrate %></td>
+      </tr>
+      <tr>
+        <td> Long-Term Gain Rate:</td>
+        <td> <%= f.text_field :long_gain_rate %></td>
+      </tr>
+      <tr>
+        <td>  Net Capital Gain YTD:</td>
+        <td> <%= f.text_field :net_capital_yr %></td>
+      </tr>
+      <tr>
+        <td> Maximum Tournover per sceurity:</td>
+        <td> <%= f.text_field :max_tournover %></td>
+      </tr>
+      <tr>
+        <td> Maximum number of trades:</td>
+        <td> <%= f.text_field :max_trade %></td>
+      </tr>
+      <tr>
+        <td> Maximum number of Assets:</td>
+        <td> <%= f.text_field :max_assets %></td>
+      </tr>
+    <!--  <tr>
+        <td> Rebalance type:</td>
+        <td> <%= f.text_field :rebalance_type %></td>
+      </tr>-->
+
+
+    </table>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

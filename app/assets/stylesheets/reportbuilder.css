@@ -1,0 +1,13 @@
+.LeftTopDiv
+{
+    position:relative; left:0px; top:0px;width:18px; height:18px;float: left; border-style:outset; border-width:0pt; border-color:#ff0000;background:#d6d6d6;
+}
+.HorizRulerDiv
+{
+    position:relative; float: left; width: 0; height: 10px;left: 0px; border-style:outset; border-width:0pt; border-color:#ff0000;
+}
+
+.VertiRulerDiv
+{
+    position:relative; float: left; width: 10px; height: 220px;left: 0px; top:18px;border-style:outset; border-width:0pt; border-color:#ff0000;
+}
