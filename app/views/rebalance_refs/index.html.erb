@@ -1,0 +1,27 @@
+<h1>Listing rebalance_refs</h1>
+
+<table>
+  <tr>
+    <th>Group</th>
+    <th>Acc</th>
+    <th>Client</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rebalance_refs.each do |rebalance_ref| %>
+  <tr>
+    <td><%= rebalance_ref.group_id %></td>
+    <td><%= rebalance_ref.acc_id %></td>
+    <td><%= rebalance_ref.client_id %></td>
+    <td><%= link_to 'Show', rebalance_ref %></td>
+    <td><%= link_to 'Edit', edit_rebalance_ref_path(rebalance_ref) %></td>
+    <td><%= link_to 'Destroy', rebalance_ref, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rebalance ref', new_rebalance_ref_path %>

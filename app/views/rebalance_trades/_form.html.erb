@@ -1,0 +1,117 @@
+<%= form_for(@rebalance_trade) do |f| %>
+  <% if @rebalance_trade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rebalance_trade.errors.count, "error") %> prohibited this rebalance_trade from being saved:</h2>
+
+      <ul>
+      <% @rebalance_trade.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :trade_id %><br />
+    <%= f.text_field :trade_id %>
+  </div>
+  <div class="field">
+    <%= f.label :group_id %><br />
+    <%= f.text_field :group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :action_id %><br />
+    <%= f.text_field :action_id %>
+  </div>
+  <div class="field">
+    <%= f.label :acc_id %><br />
+    <%= f.text_field :acc_id %>
+  </div>
+  <div class="field">
+    <%= f.label :acc_name %><br />
+    <%= f.text_field :acc_name %>
+  </div>
+  <div class="field">
+    <%= f.label :security_id %><br />
+    <%= f.text_field :security_id %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :cur_mkvalue %><br />
+    <%= f.text_field :cur_mkvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :cur_percent %><br />
+    <%= f.text_field :cur_percent %>
+  </div>
+  <div class="field">
+    <%= f.label :prop_mkvalue %><br />
+    <%= f.text_field :prop_mkvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :prop_percent %><br />
+    <%= f.text_field :prop_percent %>
+  </div>
+  <div class="field">
+    <%= f.label :action %><br />
+    <%= f.text_field :action %>
+  </div>
+  <div class="field">
+    <%= f.label :action_currency %><br />
+    <%= f.text_field :action_currency %>
+  </div>
+  <div class="field">
+    <%= f.label :shares %><br />
+    <%= f.text_field :shares %>
+  </div>
+  <div class="field">
+    <%= f.label :trans_type_code %><br />
+    <%= f.text_field :trans_type_code %>
+  </div>
+  <div class="field">
+    <%= f.label :tar_percent %><br />
+    <%= f.text_field :tar_percent %>
+  </div>
+  <div class="field">
+    <%= f.label :price_decimal %><br />
+    <%= f.text_field :price_decimal %>
+  </div>
+  <div class="field">
+    <%= f.label :price_date %><br />
+    <%= f.datetime_select :price_date %>
+  </div>
+  <div class="field">
+    <%= f.label :trans_fee %><br />
+    <%= f.text_field :trans_fee %>
+  </div>
+  <div class="field">
+    <%= f.label :is_washsale %><br />
+    <%= f.text_field :is_washsale %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_field :note %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_name %><br />
+    <%= f.text_field :user_name %>
+  </div>
+  <div class="field">
+    <%= f.label :ticker %><br />
+    <%= f.text_field :ticker %>
+  </div>
+  <div class="field">
+    <%= f.label :xml_data %><br />
+    <%= f.text_area :xml_data %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

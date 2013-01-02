@@ -1,0 +1,29 @@
+<%= form_for(@rebalance_ref) do |f| %>
+  <% if @rebalance_ref.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rebalance_ref.errors.count, "error") %> prohibited this rebalance_ref from being saved:</h2>
+
+      <ul>
+      <% @rebalance_ref.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :group_id %><br />
+    <%= f.text_field :group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :acc_id %><br />
+    <%= f.text_field :acc_id %>
+  </div>
+  <div class="field">
+    <%= f.label :client_id %><br />
+    <%= f.text_field :client_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Security:</b>
+  <%= @security_similar.security_id %>
+</p>
+
+<p>
+  <b>Similar secid:</b>
+  <%= @security_similar.similar_secid %>
+</p>
+
+
+<%= link_to 'Edit', edit_security_similar_path(@security_similar) %> |
+<%= link_to 'Back', security_similars_path %>

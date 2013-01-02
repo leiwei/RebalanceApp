@@ -4,21 +4,17 @@
   <Cfg ChildPaging="2" RemoveCollapsed="2"/>
   <Cfg ChildParts="2" ChildPartLength="5" ChildPartMin="0" MaxChildParts="20"/>
   <Panel Delete ="1"/>
+  <LeftCols>
+    <C Name="id" Type="Text" CanEdit="0" Width="220" />
+  </LeftCols>
   <Cols>
-    <C Name="id" Type="Text" CanEdit="0" Width="220"/>
-    <C Name="C" Type="Text" CaseSensitive="0" Width="220"/>
+
+    <C Name="C" Type="Text" CaseSensitive="0" Width="220" />
     <C Name="N" Type="Text" Width="180"/>
   </Cols>
-  <Def>
-    <D Name="PARENT" Expanded="0" CanFilter="2" Calculated="1" CalcOrder="N,CHtmlPostfix" CHtmlPostfixFormula="' ('+count()+')'" NFormula="sum()"/>
-    <D Name="CPage" idVisible="0"/>
-  </Def>
-  <Head CanDelete="0">
-    <Filter idVisible="0" />
-  </Head>
+
   <Header id="id" C="Name" N="Description"/>
-  <Toolbar
-          Cells="Reload,Print,Add,AddChild,ExpandAll,CollapseAll,Columns,Cfg,StyleTitle,StyleCombo,Empty,Formula"
-          Styles="2" Formula="'Rows: &lt;b>'+count('Row.Def.Name==&quot;R&quot;',4)+'&lt;/b>, Num sum:&lt;b>'+sum('N')+'&lt;/b>'" FormulaLeft="0" isVisible="0"/>
+
+
 </Grid>
 

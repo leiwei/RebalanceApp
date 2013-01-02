@@ -1,0 +1,25 @@
+<%= form_for(@security_similar) do |f| %>
+  <% if @security_similar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@security_similar.errors.count, "error") %> prohibited this security_similar from being saved:</h2>
+
+      <ul>
+      <% @security_similar.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :security_id %><br />
+    <%= f.text_field :security_id %>
+  </div>
+  <div class="field">
+    <%= f.label :similar_secid %><br />
+    <%= f.text_field :similar_secid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

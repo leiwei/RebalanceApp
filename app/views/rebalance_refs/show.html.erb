@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Group:</b>
+  <%= @rebalance_ref.group_id %>
+</p>
+
+<p>
+  <b>Acc:</b>
+  <%= @rebalance_ref.acc_id %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%= @rebalance_ref.client_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_rebalance_ref_path(@rebalance_ref) %> |
+<%= link_to 'Back', rebalance_refs_path %>

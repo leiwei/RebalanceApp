@@ -1,0 +1,25 @@
+<h1>Listing security_similars</h1>
+
+<table>
+  <tr>
+    <th>Security</th>
+    <th>Similar secid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @security_similars.each do |security_similar| %>
+  <tr>
+    <td><%= security_similar.security_id %></td>
+    <td><%= security_similar.similar_secid %></td>
+    <td><%= link_to 'Show', security_similar %></td>
+    <td><%= link_to 'Edit', edit_security_similar_path(security_similar) %></td>
+    <td><%= link_to 'Destroy', security_similar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Security similar', new_security_similar_path %>

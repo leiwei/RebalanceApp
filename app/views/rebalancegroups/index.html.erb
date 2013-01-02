@@ -27,12 +27,25 @@
             url: "/rebalancegroups/" + sid,
             data: "",
             success: function(msg){
-                debugger;
-                alert( "Data Saved: " + msg );
+                alert( "Deleted: " + msg );
             }
         });
 
     }
+    Grids.OnEndEdit =  function(grid, row, col, save, val, raw)
+    {
+
+        var obj_json = {g_id:row.id,g_name:val};
+        $.ajax({
+            type: "put",
+            url: "/rebalancegroups/" + row.id,
+            data: obj_json,
+            success: function(msg){
+                alert( "Updated: " + msg );
+            }
+        });
+    }
+
 
     function OverlayShow(){
 

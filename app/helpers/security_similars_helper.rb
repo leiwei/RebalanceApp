@@ -1,0 +1,2 @@
+module SecuritySimilarsHelper
+end

@@ -1,0 +1,71 @@
+<h1>Listing rebalance_trades</h1>
+
+<table>
+  <tr>
+    <th>Trade</th>
+    <th>Group</th>
+    <th>Action</th>
+    <th>Acc</th>
+    <th>Acc name</th>
+    <th>Security</th>
+    <th>Quantity</th>
+    <th>Cur mkvalue</th>
+    <th>Cur percent</th>
+    <th>Prop mkvalue</th>
+    <th>Prop percent</th>
+    <th>Action</th>
+    <th>Action currency</th>
+    <th>Shares</th>
+    <th>Trans type code</th>
+    <th>Tar percent</th>
+    <th>Price decimal</th>
+    <th>Price date</th>
+    <th>Trans fee</th>
+    <th>Is washsale</th>
+    <th>Note</th>
+    <th>User</th>
+    <th>User name</th>
+    <th>Ticker</th>
+    <th>Xml data</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rebalance_trades.each do |rebalance_trade| %>
+  <tr>
+    <td><%= rebalance_trade.trade_id %></td>
+    <td><%= rebalance_trade.group_id %></td>
+    <td><%= rebalance_trade.action_id %></td>
+    <td><%= rebalance_trade.acc_id %></td>
+    <td><%= rebalance_trade.acc_name %></td>
+    <td><%= rebalance_trade.security_id %></td>
+    <td><%= rebalance_trade.quantity %></td>
+    <td><%= rebalance_trade.cur_mkvalue %></td>
+    <td><%= rebalance_trade.cur_percent %></td>
+    <td><%= rebalance_trade.prop_mkvalue %></td>
+    <td><%= rebalance_trade.prop_percent %></td>
+    <td><%= rebalance_trade.action %></td>
+    <td><%= rebalance_trade.action_currency %></td>
+    <td><%= rebalance_trade.shares %></td>
+    <td><%= rebalance_trade.trans_type_code %></td>
+    <td><%= rebalance_trade.tar_percent %></td>
+    <td><%= rebalance_trade.price_decimal %></td>
+    <td><%= rebalance_trade.price_date %></td>
+    <td><%= rebalance_trade.trans_fee %></td>
+    <td><%= rebalance_trade.is_washsale %></td>
+    <td><%= rebalance_trade.note %></td>
+    <td><%= rebalance_trade.user_id %></td>
+    <td><%= rebalance_trade.user_name %></td>
+    <td><%= rebalance_trade.ticker %></td>
+    <td><%= rebalance_trade.xml_data %></td>
+    <td><%= link_to 'Show', rebalance_trade %></td>
+    <td><%= link_to 'Edit', edit_rebalance_trade_path(rebalance_trade) %></td>
+    <td><%= link_to 'Destroy', rebalance_trade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rebalance trade', new_rebalance_trade_path %>

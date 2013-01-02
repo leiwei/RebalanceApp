@@ -70,15 +70,12 @@ class RebalancegroupsController < ApplicationController
   def update
     @rebalancegroup = Rebalancegroup.find(params[:id])
 
-    respond_to do |format|
-      if @rebalancegroup.update_attributes(params[:rebalancegroup])
-        format.html { redirect_to @rebalancegroup, notice: 'Rebalancegroup was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @rebalancegroup.errors, status: :unprocessable_entity }
-      end
+    @g_name = params[:g_name]
+    @modify_at =  Time.now.strftime("%Y-%m-%d %H:%M:%S")
+    if  @rebalancegroup.update_attributes(:group_name=>@g_name, :lst_modify_at=> @modify_at)
+      render :text => @g_name+"--update success"
     end
+
   end
 
   # DELETE /rebalancegroups/1
@@ -93,7 +90,7 @@ class RebalancegroupsController < ApplicationController
 
   def returnxml
 
-     require 'rexml/document'
+    # require 'rexml/document'
 
      @rebalancegroup = Rebalancegroup.all
 

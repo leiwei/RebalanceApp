@@ -1,8 +1,27 @@
 RebalanceApp::Application.routes.draw do
 
 
-  match 'rebalancegroups/returnxml' => 'rebalancegroups#returnxml'
-  resources :rebalancegroups
+  resources :rails
+
+
+  resources :rebalance_trades
+
+
+  resources :security_similars
+
+
+
+  match 'rebalance_refs' =>'rebalance_refs#index'
+  resources :rebalance_refs  do
+    match ':controller(/:action(/:id))(.:format)'
+  end
+
+
+
+ match 'rebalancegroups/returnxml' => 'rebalancegroups#returnxml'
+  resources :rebalancegroups do
+
+  end
 
   match '/rebalancegroups/index' => 'rebalancegroups#index'
 

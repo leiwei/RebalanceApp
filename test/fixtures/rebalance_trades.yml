@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  trade_id: MyString
+  group_id: MyString
+  action_id: MyString
+  acc_id: MyString
+  acc_name: MyString
+  security_id: MyString
+  quantity: 9.99
+  cur_mkvalue: 9.99
+  cur_percent: 9.99
+  prop_mkvalue: 9.99
+  prop_percent: 9.99
+  action: MyString
+  action_currency: MyString
+  shares: 9.99
+  trans_type_code: MyString
+  tar_percent: 9.99
+  price_decimal: MyString
+  price_date: 2012-12-31 20:55:32
+  trans_fee: 9.99
+  is_washsale: MyString
+  note: MyString
+  user_id: MyString
+  user_name: MyString
+  ticker: MyString
+  xml_data: MyText
+
+two:
+  trade_id: MyString
+  group_id: MyString
+  action_id: MyString
+  acc_id: MyString
+  acc_name: MyString
+  security_id: MyString
+  quantity: 9.99
+  cur_mkvalue: 9.99
+  cur_percent: 9.99
+  prop_mkvalue: 9.99
+  prop_percent: 9.99
+  action: MyString
+  action_currency: MyString
+  shares: 9.99
+  trans_type_code: MyString
+  tar_percent: 9.99
+  price_decimal: MyString
+  price_date: 2012-12-31 20:55:32
+  trans_fee: 9.99
+  is_washsale: MyString
+  note: MyString
+  user_id: MyString
+  user_name: MyString
+  ticker: MyString
+  xml_data: MyText

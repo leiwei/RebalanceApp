@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group_id: MyString
+  acc_id: MyString
+  client_id: MyString
+
+two:
+  group_id: MyString
+  acc_id: MyString
+  client_id: MyString
