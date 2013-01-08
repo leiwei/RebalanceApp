@@ -1,0 +1,49 @@
+
+<h1>New pas_security</h1>
+
+<%= form_for(@pas_security) do |f| %>
+    <% if @pas_security.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@pas_security.errors.count, "error") %> prohibited this pas_security from being saved:</h2>
+
+          <ul>
+            <% @pas_security.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <!--:large_cap,:mid_cap,:nonus_equity,:bond,:cash-->
+    <div class="field">
+      <%= f.label :security_name %><br />
+      <%= f.text_field :security_name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :large_cap %><br />
+      <%= f.number_field :large_cap %>
+    </div>
+    <div class="field">
+      <%= f.label :mid_cap %><br />
+      <%= f.number_field :mid_cap %>
+    </div>
+    <div class="field">
+      <%= f.label :nonus_equity %><br />
+      <%= f.number_field :nonus_equity %>
+    </div>
+    <div class="field">
+      <%= f.label :bond %><br />
+      <%= f.number_field :bond %>
+    </div>
+    <div class="field">
+      <%= f.label :cash %><br />
+      <%= f.number_field :cash %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+
+
+<%= link_to 'Back', pas_securities_path %>

@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="455ec1f2-4160-461a-bedd-f4d74d0b41cc" name="Default" comment="" />
+    <list default="true" id="455ec1f2-4160-461a-bedd-f4d74d0b41cc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.boxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/pas_accounts.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/pas_positions.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/pas_securities.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/boxy.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pas_accounts.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pas_positions.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pas_securities.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/pas_accounts_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/pas_positions_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/pas_securities_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/pas_accounts_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/pas_positions_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/pas_securities_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/pas_account.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/pas_position.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/pas_security.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/message.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_accounts/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_accounts/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_accounts/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_accounts/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_accounts/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_positions/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_positions/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_positions/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_positions/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_positions/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_securities/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_securities/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_securities/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_securities/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pas_securities/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/rebalance_refs/lsbygroupid.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130105000744_create_pas_accounts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130106010145_create_pas_positions.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130107040552_create_pas_securities.rb" />
+      <change type="DELETED" beforePath="D:\Test\RebalanceApp\rebalance_project\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="D:\Test\RebalanceApp\rebalance_project\.gitignore" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/demos.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/demos.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/rebalance_refs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/rebalance_refs_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/rebalance_ref.rb" afterPath="$PROJECT_DIR$/app/models/rebalance_ref.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/rebalancegroup.erb" afterPath="$PROJECT_DIR$/app/views/layouts/rebalancegroup.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rebalance_refs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/rebalance_refs/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rebalancegroups/index.html.erb" afterPath="$PROJECT_DIR$/app/views/rebalancegroups/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TreeGrid/IndexDef.xml" afterPath="$PROJECT_DIR$/public/TreeGrid/IndexDef.xml" />
+    </list>
     <ignored path="RebalanceApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,37 +71,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rebalance_trades.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/fixtures/rebalance_trades.yml">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/rebalancegroups/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="56" column="77" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rebalance_refs_controller_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/functional/rebalance_refs_controller_test.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pas_securities/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rebalance_refs_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/rebalance_refs_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="53" selection-start="431" selection-end="431" vertical-scroll-proportion="0.3558776">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/rebalance_refs/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="40" column="28" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -58,53 +92,123 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="71" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+            <state line="30" column="90" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/rebalancegroups/index.html.erb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pas_accounts/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="70" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-36.615383">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rebalancegroups_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/rebalancegroups_controller.rb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pas_accounts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="72" selection-end="96" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1357345780374" expanded="true" signature="27:4438" placeholder="do ... end" />
+                <marker date="1357345780374" expanded="true" signature="42:367" placeholder="if ... end" />
+                <marker date="1357345780374" expanded="true" signature="104:357" placeholder="..." />
+                <marker date="1357345780374" expanded="true" signature="230:346" placeholder="..." />
+                <marker date="1357345780374" expanded="true" signature="280:332" placeholder="do ... end" />
+                <marker date="1357345780374" expanded="true" signature="376:573" placeholder="..." />
+                <marker date="1357345780374" expanded="true" signature="597:679" placeholder="..." />
+                <marker date="1357345780374" expanded="true" signature="701:781" placeholder="..." />
+                <marker date="1357345780374" expanded="true" signature="787:4375" placeholder="..." />
+                <marker date="1357345780374" expanded="true" signature="4401:4430" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lsbygroupid.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/rebalance_refs/lsbygroupid.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="35" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1357433471114" expanded="true" signature="40:712" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="68:703" placeholder="{...}" />
+                <marker date="1357433471114" expanded="true" signature="165:699" placeholder="{...}" />
+                <marker date="1357433471114" expanded="true" signature="381:690" placeholder="{&quot;type&quot;: &quot;post&quot;...}" />
+                <marker date="1357433471114" expanded="true" signature="512:679" placeholder="{...}" />
+                <marker date="1357433471114" expanded="true" signature="567:664" placeholder="{...}" />
+                <marker date="1357433471114" expanded="true" signature="719:1910" placeholder="..." />
+                <marker date="1357433471114" expanded="false" signature="735:760" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="761:958" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="885:916" placeholder="{ ... }" />
+                <marker date="1357433471114" expanded="false" signature="974:1000" placeholder="..." />
+                <marker date="1357433471114" expanded="false" signature="1171:1196" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="1197:1903" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="1205:1892" placeholder="if ... end" />
+                <marker date="1357433471114" expanded="false" signature="1287:1300" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="1301:1881" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="1312:1417" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="1428:1583" placeholder="..." />
+                <marker date="1357433471114" expanded="true" signature="1605:1866" placeholder="do ... end" />
+                <marker date="1357433471114" expanded="true" signature="1628:1852" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pas_securities/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="26" selection-start="508" selection-end="1165" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1357560304030" expanded="true" signature="56:1232" placeholder="do ... end" />
+                <marker date="1357560304030" expanded="true" signature="73:444" placeholder="if ... end" />
+                <marker date="1357560304030" expanded="true" signature="140:432" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="276:417" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="333:399" placeholder="do ... end" />
+                <marker date="1357560304030" expanded="true" signature="527:621" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="646:734" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="758:842" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="866:960" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="984:1062" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="1086:1164" placeholder="..." />
+                <marker date="1357560304030" expanded="true" signature="1191:1224" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pas_accounts_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pas_accounts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rebalancegroup.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/rebalancegroup.rb">
+      <file leaf-file-name="jquery.boxy.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.boxy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="26" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+            <state line="587" column="30" selection-start="20657" selection-end="20662" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/rebalance_refs/index.html.erb">
+      <file leaf-file-name="pas_securities_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pas_securities_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="54" selection-start="153" selection-end="153" vertical-scroll-proportion="-6.5384617">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rebalancegroup.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/rebalancegroup.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="103" selection-start="1769" selection-end="1769" vertical-scroll-proportion="-7.1923075">
-              <folding />
+            <state line="6" column="36" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1357558631619" expanded="true" signature="335:389" placeholder="#..." />
+                <marker date="1357558631619" expanded="true" signature="579:637" placeholder="#..." />
+                <marker date="1357558631619" expanded="true" signature="911:963" placeholder="#..." />
+                <marker date="1357558631619" expanded="true" signature="1458:1512" placeholder="#..." />
+                <marker date="1357558631619" expanded="true" signature="1982:2042" placeholder="#..." />
+                <marker date="1357558631619" expanded="true" signature="2591:2769" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,28 +224,28 @@
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="SSH_EXECUTABLE" value="NATIVE_SSH" />
     <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/rebalancegroups/returnxml.html.erb" />
-        <option value="$PROJECT_DIR$/public/TreeGrid/IndexData.xml" />
-        <option value="$PROJECT_DIR$/log/development.log" />
-        <option value="$PROJECT_DIR$/public/TreeGrid/IndexDef.xml" />
-        <option value="$PROJECT_DIR$/app/views/rebalancegroups/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/rebalancegroups_controller.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130101042548_create_security_similars.rb" />
-        <option value="$PROJECT_DIR$/create_table_cmd" />
-        <option value="$PROJECT_DIR$/db/migrate/20130101045532_create_rebalance_trades.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130101022249_create_rebalance_refs.rb" />
-        <option value="$PROJECT_DIR$/app/models/rebalancegroup.rb" />
-        <option value="$PROJECT_DIR$/app/models/rebalance_ref.rb" />
+        <option value="$PROJECT_DIR$/app/views/pas_accounts/index.html.erb" />
+        <option value="$PROJECT_DIR$/public/TreeGrid/position_grid_def.xml" />
+        <option value="$PROJECT_DIR$/db/migrate/20130106010145_create_pas_positions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130107040552_create_pas_securities.rb" />
+        <option value="$PROJECT_DIR$/app/models/pas_position.rb" />
+        <option value="$PROJECT_DIR$/app/models/pas_security.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/demos.css" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/public/TreeGrid/security_grid_def.xml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/dialog.css" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/dialog.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/rebalancegroup.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/rebalance_refs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/message.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/pas_securities_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/pas_securities/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pas_securities/index.html.erb" />
       </list>
     </option>
   </component>
@@ -174,7 +278,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -200,8 +304,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,7 +334,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,24 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,140 +366,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rebalancegroups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rebalance_refs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RebalanceApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -421,21 +373,21 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="D:/Infomations/ruby sample/源代码/第11章" />
+    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="D:/GitHub/Rebalance/RebalanceApp" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Test\RebalanceApp\app\views\rebalancegroups" />
-      <recent name="D:\Test\RebalanceApp\app\views\rebalancehomes" />
-      <recent name="D:\Test\RebalanceApp\app\assets\stylesheets" />
-      <recent name="D:\Test\RebalanceApp\app\assets\javascripts\jqueryui" />
       <recent name="D:\Test\RebalanceApp\app\views\layouts" />
+      <recent name="D:\Test\RebalanceApp\public\images" />
+      <recent name="D:\Test\RebalanceApp\app\assets\stylesheets" />
+      <recent name="D:\Test\RebalanceApp\app\assets\javascripts" />
+      <recent name="D:\Test\RebalanceApp\public\TreeGrid" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Test\RebalanceApp\app\views\rebalancegroups" />
@@ -608,6 +560,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -635,13 +594,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
@@ -738,8 +690,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.schema" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.schema" />
         <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
@@ -794,23 +746,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17716116" sideWeight="0.22914349" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22447917" sideWeight="0.7251082" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3637375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23125" sideWeight="0.75541127" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26585093" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17716116" sideWeight="0.22914349" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27489176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24458875" sideWeight="0.4984375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24458875" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18242492" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -848,7 +800,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -869,114 +821,154 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130101022249_create_rebalance_refs.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="429" selection-end="429" vertical-scroll-proportion="0.33876812">
+        <state line="0" column="0" selection-start="0" selection-end="248" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/message.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="93" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.457971" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/rebalancegroup.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="100" selection-start="186" selection-end="186" vertical-scroll-proportion="0.14782609" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="54" selection-start="177" selection-end="177" vertical-scroll-proportion="0.123188406" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130107040552_create_pas_securities.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="24" selection-start="871" selection-end="880" vertical-scroll-proportion="0.6885475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rebalancegroups/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="77" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130101042548_create_security_similars.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/pas_securities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="6" column="36" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1357558631619" expanded="true" signature="335:389" placeholder="#..." />
+            <marker date="1357558631619" expanded="true" signature="579:637" placeholder="#..." />
+            <marker date="1357558631619" expanded="true" signature="911:963" placeholder="#..." />
+            <marker date="1357558631619" expanded="true" signature="1458:1512" placeholder="#..." />
+            <marker date="1357558631619" expanded="true" signature="1982:2042" placeholder="#..." />
+            <marker date="1357558631619" expanded="true" signature="2591:2769" placeholder="do ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.boxy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="587" column="30" selection-start="20657" selection-end="20662" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/pas_securities/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="26" selection-start="508" selection-end="1165" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1357560304030" expanded="true" signature="56:1232" placeholder="do ... end" />
+            <marker date="1357560304030" expanded="true" signature="73:444" placeholder="if ... end" />
+            <marker date="1357560304030" expanded="true" signature="140:432" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="276:417" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="333:399" placeholder="do ... end" />
+            <marker date="1357560304030" expanded="true" signature="527:621" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="646:734" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="758:842" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="866:960" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="984:1062" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="1086:1164" placeholder="..." />
+            <marker date="1357560304030" expanded="true" signature="1191:1224" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pas_accounts/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="90" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/rebalance_refs.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/pas_accounts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1357345780374" expanded="true" signature="27:4438" placeholder="do ... end" />
+            <marker date="1357345780374" expanded="true" signature="42:367" placeholder="if ... end" />
+            <marker date="1357345780374" expanded="true" signature="104:357" placeholder="..." />
+            <marker date="1357345780374" expanded="true" signature="230:346" placeholder="..." />
+            <marker date="1357345780374" expanded="true" signature="280:332" placeholder="do ... end" />
+            <marker date="1357345780374" expanded="true" signature="376:573" placeholder="..." />
+            <marker date="1357345780374" expanded="true" signature="597:679" placeholder="..." />
+            <marker date="1357345780374" expanded="true" signature="701:781" placeholder="..." />
+            <marker date="1357345780374" expanded="true" signature="787:4375" placeholder="..." />
+            <marker date="1357345780374" expanded="true" signature="4401:4430" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/rebalance_trades.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/rebalance_refs/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rebalance_refs/lsbygroupid.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="35" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1357433471114" expanded="true" signature="40:712" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="68:703" placeholder="{...}" />
+            <marker date="1357433471114" expanded="true" signature="165:699" placeholder="{...}" />
+            <marker date="1357433471114" expanded="true" signature="381:690" placeholder="{&quot;type&quot;: &quot;post&quot;...}" />
+            <marker date="1357433471114" expanded="true" signature="512:679" placeholder="{...}" />
+            <marker date="1357433471114" expanded="true" signature="567:664" placeholder="{...}" />
+            <marker date="1357433471114" expanded="true" signature="719:1910" placeholder="..." />
+            <marker date="1357433471114" expanded="false" signature="735:760" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="761:958" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="885:916" placeholder="{ ... }" />
+            <marker date="1357433471114" expanded="false" signature="974:1000" placeholder="..." />
+            <marker date="1357433471114" expanded="false" signature="1171:1196" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="1197:1903" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="1205:1892" placeholder="if ... end" />
+            <marker date="1357433471114" expanded="false" signature="1287:1300" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="1301:1881" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="1312:1417" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="1428:1583" placeholder="..." />
+            <marker date="1357433471114" expanded="true" signature="1605:1866" placeholder="do ... end" />
+            <marker date="1357433471114" expanded="true" signature="1628:1852" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/rebalance_refs_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/pas_securities/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/rebalancegroup.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rebalance_refs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="153" selection-end="153" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/rebalance_ref.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+        <state line="40" column="28" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="71" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+        <state line="30" column="90" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rebalancegroups/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="70" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-36.615383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/rebalancegroup.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="103" selection-start="1769" selection-end="1769" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/rebalancegroups_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="72" selection-end="96" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rebalance_refs/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/pas_accounts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/rebalance_refs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="53" selection-start="431" selection-end="431" vertical-scroll-proportion="0.3558776">
           <folding />
         </state>
       </provider>

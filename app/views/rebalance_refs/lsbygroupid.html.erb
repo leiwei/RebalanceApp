@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+<script>
+  function imgOnclick()
+  {
+     var len = $("#acct_id").find("option:selected").length ;
+     for(var i=0;i<len;i++)
+     {
+         var e = $("#acct_id").find("option:selected")[i];
+         var acct_id = e.value;
+
+         var group_id = "<%=@group_id %>" ;
+
+         var obj_json = {acct_id:acct_id,group_id:group_id};
+         $.ajax({
+             type: "post",
+             url: "/rebalance_refs/",
+             data: obj_json,
+             success: function(msg){
+                 if(msg=="success")
+                 {
+                     location.href="/rebalance_refs/lsbygroupid/" +group_id;
+                 }
+             }
+         });
+     }
+  }
+</script>
+
+<div>
+  <div style="width:150px ;float: left;">
+    <p><b>ALL account List(<%= @accts.count() %>):</b></p>
+    <%= select_tag 'acct_id', options_for_select(@accts.collect{ |r| [r.acct_name,r.acct_id] }),:multiple => true, :size => 10%>
+  </div>
+  <div style="width: 100px; float: left;"><img src="/images/arrow-to-right.jpg" width="80px" height="50px" alt="click here" onmouseover="this.style.cursor='pointer'" onclick="imgOnclick()"/></div>
+  <div style="width:100px ;float: left;">
+    <%if @refs.size > 0 %>
+    <table border="1" cellpadding="0" cellspacing="0" style="width: 400px;">
+      <tr>
+        <td colspan="3">Current Rebalance Group:<b><%= @refs.first().group_name  %></b></td>
+      </tr>
+      <tr>
+        <td><b>Group Name:</b></td>
+        <td><b>Accout Name:</b></td>
+        <td><b>Account Type:</b></td>
+        <td><b>Action:</b></td>
+      </tr>
+      <% @refs.each do |r| %>
+          <tr>
+            <td><%= r.group_name %></td>
+            <td><%= r.acct_name %></td>
+            <td><%= r.acct_type %></td>
+            <td> <%= button_to "delete", r, :method=>:delete, :class=>:destroy %></td>
+          </tr>
+      <% end %>
+    </table>
+    <%end%>
+   </div>
+</div>
+

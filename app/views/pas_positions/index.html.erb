@@ -1,0 +1,77 @@
+<h1>Listing pas_positions</h1>
+
+<table>
+  <tr>
+  <!--  <th>Position</th>-->
+    <th>Acct</th>
+    <th>Security</th>
+  <!--  <th>Start date</th>
+    <th>Average cost</th>-->
+    <th>Quantity</th>
+  <!--  <th>Position flag</th>
+    <th>As of date</th>-->
+    <th>Price</th>
+    <th>Marketvalue</th>
+    <th>Percentage</th>
+    <!--<th>Rep number</th>
+    <th>Tolerance</th>
+    <th>Lower tolerance</th>
+    <th>Minimum trade amount</th>
+    <th>Reconciliation flag</th>
+    <th>Transaction setting</th>
+    <th>Lot method</th>
+    <th>Unmanaged asset flag</th>-->
+    <!--<th>Exclude performance flag</th>
+    <th>Excluded holding flag</th>
+    <th>Holding status type</th>
+    <th>Import file date</th>
+    <th>Locked holding flag</th>
+    <th>Last transaction date</th>
+    <th>Data source type</th>
+    <th>Seq</th>-->
+    <th>security type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pas_positions.each do |pas_position| %>
+  <tr>
+ <!--   <td><%= pas_position.position_id %></td>-->
+    <td><%= pas_position.acct_id %></td>
+    <td><%= pas_position.security_id %></td>
+ <!--   <td><%= pas_position.start_date %></td>
+    <td><%= pas_position.average_cost %></td>-->
+    <td><%= pas_position.quantity %></td>
+   <!-- <td><%= pas_position.position_flag %></td>-->
+  <!--  <td><%= pas_position.as_of_date %></td>-->
+    <td><%= pas_position.price %></td>
+    <td><%= pas_position.marketvalue %></td>
+    <td><%= pas_position.percentage %></td>
+   <!-- <td><%= pas_position.rep_number %></td>
+    <td><%= pas_position.tolerance %></td>
+    <td><%= pas_position.lower_tolerance %></td>
+    <td><%= pas_position.minimum_trade_amount %></td>
+    <td><%= pas_position.reconciliation_flag %></td>
+    <td><%= pas_position.transaction_setting_id %></td>
+    <td><%= pas_position.lot_method_id %></td>
+    <td><%= pas_position.unmanaged_asset_flag %></td>
+    <td><%= pas_position.exclude_performance_flag %></td>
+    <td><%= pas_position.excluded_holding_flag %></td>
+    <td><%= pas_position.holding_status_type %></td>
+    <td><%= pas_position.import_file_date %></td>
+    <td><%= pas_position.locked_holding_flag %></td>
+    <td><%= pas_position.last_transaction_date %></td>
+    <td><%= pas_position.data_source_type %></td>
+    <td><%= pas_position.seq_id %></td>-->
+    <td><%= pas_position.security_type %></td>
+    <td><%= link_to 'Show', pas_position %></td>
+    <td><%= link_to 'Edit', edit_pas_position_path(pas_position) %></td>
+    <td><%= link_to 'Destroy', pas_position, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pas position', new_pas_position_path %>

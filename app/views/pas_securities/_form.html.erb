@@ -1,0 +1,121 @@
+<%= form_for(@pas_security) do |f| %>
+  <% if @pas_security.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pas_security.errors.count, "error") %> prohibited this pas_security from being saved:</h2>
+
+      <ul>
+      <% @pas_security.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :security_id %><br />
+    <%= f.text_field :security_id %>
+  </div>
+  <div class="field">
+    <%= f.label :symbol %><br />
+    <%= f.text_field :symbol %>
+  </div>
+  <div class="field">
+    <%= f.label :cusip %><br />
+    <%= f.text_field :cusip %>
+  </div>
+  <div class="field">
+    <%= f.label :isin %><br />
+    <%= f.text_field :isin %>
+  </div>
+  <div class="field">
+    <%= f.label :fund_code %><br />
+    <%= f.text_field :fund_code %>
+  </div>
+  <div class="field">
+    <%= f.label :security_name %><br />
+    <%= f.text_field :security_name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :security_type %><br />
+    <%= f.number_field :security_type %>
+  </div>
+  <div class="field">
+    <%= f.label :security_sub_type %><br />
+    <%= f.number_field :security_sub_type %>
+  </div>
+  <div class="field">
+    <%= f.label :currency %><br />
+    <%= f.text_field :currency %>
+  </div>
+  <div class="field">
+    <%= f.label :origcountry_code %><br />
+    <%= f.text_field :origcountry_code %>
+  </div>
+  <div class="field">
+    <%= f.label :country_code %><br />
+    <%= f.text_field :country_code %>
+  </div>
+  <div class="field">
+    <%= f.label :exchange_id %><br />
+    <%= f.text_field :exchange_id %>
+  </div>
+  <div class="field">
+    <%= f.label :default_currency %><br />
+    <%= f.text_field :default_currency %>
+  </div>
+  <div class="field">
+    <%= f.label :price_source %><br />
+    <%= f.number_field :price_source %>
+  </div>
+  <div class="field">
+    <%= f.label :assetclass_id %><br />
+    <%= f.number_field :assetclass_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sector_id %><br />
+    <%= f.number_field :sector_id %>
+  </div>
+  <div class="field">
+    <%= f.label :industry_id %><br />
+    <%= f.number_field :industry_id %>
+  </div>
+  <div class="field">
+    <%= f.label :reporting1099_category_id %><br />
+    <%= f.number_field :reporting1099_category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :worthless_flag %><br />
+    <%= f.check_box :worthless_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :worthless_start_date %><br />
+    <%= f.date_select :worthless_start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :import_file_date %><br />
+    <%= f.date_select :import_file_date %>
+  </div>
+  <div class="field">
+    <%= f.label :data_source_type %><br />
+    <%= f.number_field :data_source_type %>
+  </div>
+  <div class="field">
+    <%= f.label :seq_id %><br />
+    <%= f.number_field :seq_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

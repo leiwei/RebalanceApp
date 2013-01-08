@@ -1,5 +1,14 @@
 RebalanceApp::Application.routes.draw do
 
+  match 'pas_securities/get_securities_data' => 'pas_securities#get_securities_data'
+  resources :pas_securities
+
+
+  resources :pas_positions
+
+
+  resources :pas_accounts
+
 
   resources :rails
 
@@ -11,7 +20,7 @@ RebalanceApp::Application.routes.draw do
 
 
 
-  match 'rebalance_refs' =>'rebalance_refs#index'
+  match 'rebalance_refs/lsbygroupid/:id' =>'rebalance_refs#lsbygroupid'
   resources :rebalance_refs  do
     match ':controller(/:action(/:id))(.:format)'
   end

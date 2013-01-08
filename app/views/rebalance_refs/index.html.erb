@@ -10,15 +10,17 @@
     <th></th>
   </tr>
 
-<% @rebalance_refs.each do |rebalance_ref| %>
+<% @rebalancegroups.each do |group| %>
+<% group.rebalance_refs.each do |rebalance_ref| %>
   <tr>
-    <td><%= rebalance_ref.group_id %></td>
+    <td><%= group.group_name %></td>
     <td><%= rebalance_ref.acc_id %></td>
     <td><%= rebalance_ref.client_id %></td>
     <td><%= link_to 'Show', rebalance_ref %></td>
     <td><%= link_to 'Edit', edit_rebalance_ref_path(rebalance_ref) %></td>
     <td><%= link_to 'Destroy', rebalance_ref, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
+<% end %>
 <% end %>
 </table>
 

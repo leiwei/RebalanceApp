@@ -1,0 +1,112 @@
+<h1>Listing pas_accounts</h1>
+<b>1:Taxable | 2:Tax-Deferred</b>
+<div>
+<table style="width:300px">
+ <tr>
+   <td>
+      <table>
+        <tr>
+          <!--  <th>Acct</th>
+          <th>Currency</th>-->
+          <th>Acct type</th>
+          <th>Acct name</th>
+          <!--  <th>Acct number</th>
+        <th>Open date</th>
+        <th>Start date</th>
+        <th>Performance start date</th>
+        <th>Close date</th>
+        <th>Position asof date</th>
+        <th>Account funding date</th>
+        <th>Investment strategy type</th>
+        <th>Investment company</th>
+        <th>Custodian</th>
+        <th>Source</th>
+        <th>Rep number</th>
+        <th>Reference</th>
+        <th>Federal taxable flag</th>
+        <th>State taxable flag</th>
+        <th>View</th>
+        <th>Use firsttradedate flag</th>
+        <th>Termination notification date</th>
+        <th>Termination reason</th>
+        <th>Aggregateaccount flag</th>
+        <th>Primary master account</th>
+        <th>Secondary master account</th>
+        <th>Billing start date</th>
+        <th>Last billing date</th>
+        <th>Fee calcbase type</th>
+        <th>Relationship to prevowner type</th>
+        <th>Previous owner name</th>
+        <th>Orig acct type</th>
+        <th>Import file date</th>
+        <th>Data source type</th>-->
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <% @pas_accounts.each do |pas_account| %>
+            <tr>
+              <!-- <td><%= pas_account.acct_id %></td>
+    <td><%= pas_account.currency %></td>-->
+              <td><%= pas_account.acct_type %></td>
+              <td><%= pas_account.acct_name %></td>
+              <!-- <td><%= pas_account.acct_number %></td>
+    <td><%= pas_account.open_date %></td>
+    <td><%= pas_account.start_date %></td>
+    <td><%= pas_account.performance_start_date %></td>
+    <td><%= pas_account.close_date %></td>
+    <td><%= pas_account.position_asof_date %></td>
+    <td><%= pas_account.account_funding_date %></td>
+    <td><%= pas_account.investment_strategy_type %></td>
+    <td><%= pas_account.investment_company_id %></td>
+    <td><%= pas_account.custodian_id %></td>
+    <td><%= pas_account.source_id %></td>
+    <td><%= pas_account.rep_number %></td>
+    <td><%= pas_account.reference_id %></td>
+    <td><%= pas_account.federal_taxable_flag %></td>
+    <td><%= pas_account.state_taxable_flag %></td>
+    <td><%= pas_account.view_id %></td>
+    <td><%= pas_account.use_firsttradedate_flag %></td>
+    <td><%= pas_account.termination_notification_date %></td>
+    <td><%= pas_account.termination_reason %></td>
+    <td><%= pas_account.aggregateaccount_flag %></td>
+    <td><%= pas_account.primary_master_account_id %></td>
+    <td><%= pas_account.secondary_master_account_id %></td>
+    <td><%= pas_account.billing_start_date %></td>
+    <td><%= pas_account.last_billing_date %></td>
+    <td><%= pas_account.fee_calcbase_type %></td>
+    <td><%= pas_account.relationship_to_prevowner_type %></td>
+    <td><%= pas_account.previous_owner_name %></td>
+    <td><%= pas_account.orig_acct_type %></td>
+    <td><%= pas_account.import_file_date %></td>
+    <td><%= pas_account.data_source_type %></td>-->
+              <td><%= link_to 'Show', pas_account %></td>
+              <td><%= link_to 'Edit', edit_pas_account_path(pas_account) %></td>
+              <td><%= button_to "delete", pas_account, :method=>:delete, :class=>:destroy %> </td>
+            </tr>
+        <% end %>
+      </table>
+   </td>
+   <td><table><div style="height: 300px; width: 470px;"><bdo id="grid_rebalancegroup" Data_Url="/TreeGrid/IndexData.xml" Layout_Url="/TreeGrid/position_grid_def.xml" ></bdo>  </div></table></td>
+ </tr>
+
+</table>
+</div>
+
+<br />
+<fieldset>
+      <%= form_for ('/pas_accounts') do %>
+
+      <div class="field">
+       <b>Account Type</b><%= text_field_tag "acct_id", rand(10), :size => 20 %><b>Account Name</b><%= text_field_tag "acct_name", "acct_name" + rand(100).to_s, :size => 20 %>
+      </div>
+      <div class="action">
+        <%= submit_tag("submit") %>
+      </div>
+  <% end %>
+</fieldset>
+<!--
+
+<%= link_to 'New Pas account', new_pas_account_path %>
+-->

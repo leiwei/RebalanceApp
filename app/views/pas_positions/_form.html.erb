@@ -1,0 +1,126 @@
+<%= form_for(@pas_position) do |f| %>
+  <% if @pas_position.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pas_position.errors.count, "error") %> prohibited this pas_position from being saved:</h2>
+
+      <ul>
+      <% @pas_position.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!--  <div class="field">
+    <%= f.label :position_id %><br />
+    <%= f.text_field :position_id %>
+  </div>-->
+  <div class="field">
+    <%= f.label :acct_id %><br />
+    <%= f.text_field :acct_id %>
+  </div>
+  <div class="field">
+    <%= f.label :security_id %><br />
+    <%= f.text_field :security_id %>
+  </div>
+<!--  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :average_cost %><br />
+    <%= f.text_field :average_cost %>
+  </div>-->
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </div>
+ <!-- <div class="field">
+    <%= f.label :position_flag %><br />
+    <%= f.check_box :position_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :as_of_date %><br />
+    <%= f.date_select :as_of_date %>
+  </div>-->
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :marketvalue %><br />
+    <%= f.text_field :marketvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :percentage %><br />
+    <%= f.text_field :percentage %>
+  </div>
+  <!--<div class="field">
+    <%= f.label :rep_number %><br />
+    <%= f.text_field :rep_number %>
+  </div>
+  <div class="field">
+    <%= f.label :tolerance %><br />
+    <%= f.text_field :tolerance %>
+  </div>
+  <div class="field">
+    <%= f.label :lower_tolerance %><br />
+    <%= f.text_field :lower_tolerance %>
+  </div>
+  <div class="field">
+    <%= f.label :minimum_trade_amount %><br />
+    <%= f.text_field :minimum_trade_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :reconciliation_flag %><br />
+    <%= f.check_box :reconciliation_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_setting_id %><br />
+    <%= f.text_field :transaction_setting_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lot_method_id %><br />
+    <%= f.number_field :lot_method_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unmanaged_asset_flag %><br />
+    <%= f.check_box :unmanaged_asset_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :exclude_performance_flag %><br />
+    <%= f.check_box :exclude_performance_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :excluded_holding_flag %><br />
+    <%= f.check_box :excluded_holding_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :holding_status_type %><br />
+    <%= f.number_field :holding_status_type %>
+  </div>
+  <div class="field">
+    <%= f.label :import_file_date %><br />
+    <%= f.date_select :import_file_date %>
+  </div>
+  <div class="field">
+    <%= f.label :locked_holding_flag %><br />
+    <%= f.check_box :locked_holding_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :last_transaction_date %><br />
+    <%= f.date_select :last_transaction_date %>
+  </div>-->
+    <div class="field">
+      <%= f.label :seq_id %><br />
+      <%= f.number_field :seq_id %>
+    </div>
+  <div class="field">
+    <%= f.label :data_source_type %><br />
+    <%= f.number_field :data_source_type %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

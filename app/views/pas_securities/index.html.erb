@@ -1,0 +1,65 @@
+<script>
+    Grids.OnCanRowAdd  =  function(G,row){
+
+        //Boxy.load("/pas_securities/new",{ modal: true,title:'Welcome'})
+        //new Boxy($("#m1"),{modal:true,closeable:true,title:'Create new security'});
+
+    }
+    Grids.OnRowAdd = function()
+    {
+        debugger;
+    }
+    function clicktest()
+    {
+
+          /*  Boxy.ask("你感觉怎么样?", ["好极了", "还好", "不太好"], function(val) {
+                alert("你选择的是: " + val);
+            }, {title: "这是一个问题……"});
+            return false;*/
+
+       // Boxy.load("/pas_securities/new",{ modal: true,closeable:true})
+        new Boxy($("#m1"),{modal:true,closeable:true,title:'Create new security'});
+    }
+    function saveSecurity()
+    {
+        debugger;
+    }
+
+</script>
+
+<div id="content" style="float:left;"><div style="height: 300px; width: 900px;"><bdo id="grid_pas_securities" Data_Url="/pas_securities/get_securities_data" Layout_Url="/TreeGrid/security_grid_def.xml" onload="OverlayShow()" ></bdo></div></div>
+ <div></div>
+<br />
+
+<div id="m1" style="display: none;width: 400px;"> <table id="table_newsecurity">
+  <tr>
+    <td>Security Name:</td>
+    <td><input></input></td>
+  </tr>
+  <tr>
+    <td>Large Cap:</td>
+    <td><input></input></td>
+  </tr>
+  <tr>
+    <td>Medium Cap:</td>
+    <td><input></input></td>
+  </tr>
+  <tr>
+    <td>Non-us Equity:</td>
+    <td><input></input></td>
+  </tr>
+  <tr>
+    <td>Bond:</td>
+    <td><input></input></td>
+  </tr>
+  <tr>
+    <td>Cash:</td>
+    <td><input></input></td>
+  </tr>
+</table>
+<button onclick="saveSecurity()">OK</button>
+</div>
+
+<button onclick="clicktest()">Create security</button>
+
+<%= link_to 'New Pas security', new_pas_security_path %>

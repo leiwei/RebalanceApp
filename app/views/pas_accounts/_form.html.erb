@@ -1,0 +1,153 @@
+<%= form_for(@pas_account) do |f| %>
+  <% if @pas_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pas_account.errors.count, "error") %> prohibited this pas_account from being saved:</h2>
+
+      <ul>
+      <% @pas_account.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!--  <div class="field">
+    <%= f.label :acct_id %><br />
+    <%= f.text_field :acct_id %>
+  </div>
+  <div class="field">
+    <%= f.label :currency %><br />
+    <%= f.text_field :currency %>
+  </div>-->
+  <div class="field">
+    <%= f.label :acct_type %><br />
+    <%= f.number_field :acct_type %>
+  </div>
+  <div class="field">
+    <%= f.label :acct_name %><br />
+    <%= f.text_field :acct_name %>
+  </div>
+<!--  <div class="field">
+    <%= f.label :acct_number %><br />
+    <%= f.text_field :acct_number %>
+  </div>
+  <div class="field">
+    <%= f.label :open_date %><br />
+    <%= f.date_select :open_date %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :performance_start_date %><br />
+    <%= f.date_select :performance_start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :close_date %><br />
+    <%= f.date_select :close_date %>
+  </div>
+  <div class="field">
+    <%= f.label :position_asof_date %><br />
+    <%= f.date_select :position_asof_date %>
+  </div>
+  <div class="field">
+    <%= f.label :account_funding_date %><br />
+    <%= f.date_select :account_funding_date %>
+  </div>
+  <div class="field">
+    <%= f.label :investment_strategy_type %><br />
+    <%= f.number_field :investment_strategy_type %>
+  </div>
+  <div class="field">
+    <%= f.label :investment_company_id %><br />
+    <%= f.text_field :investment_company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :custodian_id %><br />
+    <%= f.text_field :custodian_id %>
+  </div>
+  <div class="field">
+    <%= f.label :source_id %><br />
+    <%= f.number_field :source_id %>
+  </div>
+  <div class="field">
+    <%= f.label :rep_number %><br />
+    <%= f.text_field :rep_number %>
+  </div>
+  <div class="field">
+    <%= f.label :reference_id %><br />
+    <%= f.text_field :reference_id %>
+  </div>
+  <div class="field">
+    <%= f.label :federal_taxable_flag %><br />
+    <%= f.check_box :federal_taxable_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :state_taxable_flag %><br />
+    <%= f.check_box :state_taxable_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :view_id %><br />
+    <%= f.number_field :view_id %>
+  </div>
+  <div class="field">
+    <%= f.label :use_firsttradedate_flag %><br />
+    <%= f.number_field :use_firsttradedate_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :termination_notification_date %><br />
+    <%= f.date_select :termination_notification_date %>
+  </div>
+  <div class="field">
+    <%= f.label :termination_reason %><br />
+    <%= f.text_field :termination_reason %>
+  </div>
+  <div class="field">
+    <%= f.label :aggregateaccount_flag %><br />
+    <%= f.check_box :aggregateaccount_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_master_account_id %><br />
+    <%= f.text_field :primary_master_account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :secondary_master_account_id %><br />
+    <%= f.text_field :secondary_master_account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :billing_start_date %><br />
+    <%= f.date_select :billing_start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :last_billing_date %><br />
+    <%= f.date_select :last_billing_date %>
+  </div>
+  <div class="field">
+    <%= f.label :fee_calcbase_type %><br />
+    <%= f.number_field :fee_calcbase_type %>
+  </div>
+  <div class="field">
+    <%= f.label :relationship_to_prevowner_type %><br />
+    <%= f.number_field :relationship_to_prevowner_type %>
+  </div>
+  <div class="field">
+    <%= f.label :previous_owner_name %><br />
+    <%= f.text_field :previous_owner_name %>
+  </div>
+  <div class="field">
+    <%= f.label :orig_acct_type %><br />
+    <%= f.number_field :orig_acct_type %>
+  </div>
+  <div class="field">
+    <%= f.label :import_file_date %><br />
+    <%= f.date_select :import_file_date %>
+  </div>
+  <div class="field">
+    <%= f.label :data_source_type %><br />
+    <%= f.number_field :data_source_type %>
+  </div>-->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

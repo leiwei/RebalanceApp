@@ -46,6 +46,17 @@
         });
     }
 
+    Grids.OnClick = function (grid, row, col, x, y)
+    {
+        if(grid.id=="grid_rebalancegroup" && col =="id")
+        {
+            var sid = row.id
+            location.href="/rebalance_refs/lsbygroupid/" +sid;
+        }
+
+    }
+
+
 
     function OverlayShow(){
 
@@ -66,7 +77,7 @@
 <% @rebalancegroup.each do |r| %>
       <div class="ui-corner-bl"><%= r.group_name %></div>
 <% end %>-->
-<div id="content" style="float:left;"><div style="height: 100%; width: 670px;"><bdo Data_Url="/rebalancegroups/returnxml" Layout_Url="/TreeGrid/IndexDef.xml" onload="OverlayShow()" ></bdo></div></div>
+<div id="content" style="float:left;"><div style="height: 100%; width: 670px;"><bdo id="grid_rebalancegroup" Data_Url="/rebalancegroups/returnxml" Layout_Url="/TreeGrid/IndexDef.xml" onload="OverlayShow()" ></bdo></div></div>
 
 
 
